@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.sidebar a {
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 1rem;
+    flex-grow: 1;
+    background-color: #f8f9fa;
+}
+
+/* Existing styles */
+
+#main-div-1 {
+    color: #000;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5em;
+    margin-top: 1.1em;
+    padding: 0.7em 0.5em;
+    border-radius: 0.4em;
+}
+
+#div-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-right: 0em;
+}
+
+#main-div-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.div-2 {
+    width: 32%;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: #ced4da;
+    border-radius: 0.4em;
+    padding: 0.5em 0.7em;
+}
+
+.div-2 img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+
+.div-2:nth-of-type(2n) {
+    background-color: #adb5bd;
+}
+
+.div-2:hover {
+    background-color: #495057;
+    color: #fff;
+}

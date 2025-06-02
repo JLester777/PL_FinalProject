@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-panel {
+    width: 50%;
+    background-color: #2b2d42; /* Dark clay blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 850px;
+    height: auto;
+    filter: brightness(1.1) drop-shadow(0 0 10px white);
+    position: relative;
+    z-index: 1;
+    animation: shineEffect 3s infinite;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.3) 30%,
+        rgba(255, 255, 255, 0.7) 50%,
+        rgba(255, 255, 255, 0.3) 70%
+    );
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: white; /* if it's an SVG or text logo */
+}
+
+/* For image logos, add this */
+.logo.shine-img {
+    mask-image: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0) 30%,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    -webkit-mask-image: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0) 30%,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    -webkit-mask-size: 200% 200%;
+    mask-size: 200% 200%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    animation: shineEffect 2.5s infinite linear;
+}
+
+@keyframes shineEffect {
+    0% {
+        background-position: -100% -100%;
+        -webkit-mask-position: -100% -100%;
+        mask-position: -100% -100%;
+    }
+    100% {
+        background-position: 100% 100%;
+        -webkit-mask-position: 100% 100%;
+        mask-position: 100% 100%;
+    }
+}
+
+
+.right-panel {
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginbox {
+    background-color: #8bb3fd;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    text-align: center;
+}
+
+.loginbox h2 {
+    margin-bottom: 30px;
+    color: #ffffff;
+    
+}
+
+.loginbox input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.loginbox input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #212338;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #1e1f2b;
+}
+

@@ -28,7 +28,10 @@
 - Preview
 
 How to set-up/run this project:
+
     step1: Download the zip file and extract it to your C:\xampp\htdocs.
-    step2: open xampp and open phpmyadmin, then import the file pcrmsdb.sql.
+    
+    step2: open xampp(start it) and open phpmyadmin( then import the file pcrmsdb.sql.)
+    
     step3: go to browser and type http://localhost/Police-rms/public/Login.php.
 
